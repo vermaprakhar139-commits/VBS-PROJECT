@@ -2,6 +2,7 @@
   "name": "virtual-bus-services",
   "private": true,
   "version": "1.0.0",
+  "homepage": "https://vermaprakhar139-commits.github.io/VBS-PROJECT",
   "workspaces": [
     "backend",
     "frontend",
@@ -13,9 +14,13 @@
     "start": "pnpm -C backend start",
     "lint": "pnpm -C backend lint && pnpm -C frontend lint",
     "test": "pnpm -C backend test",
-    "seed": "pnpm -C backend seed"
+    "seed": "pnpm -C backend seed",
+
+    "predeploy": "pnpm -C frontend build",
+    "deploy": "gh-pages -d frontend/dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "prettier": "^3.3.0"
   }
 }
