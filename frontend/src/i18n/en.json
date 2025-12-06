@@ -1,0 +1,18 @@
+{
+  "hero": {
+    "title": "Book your next bus journey with confidence",
+    "subtitle": "Compare routes, choose seats, pay securely in seconds."
+  },
+  "labels": {
+    "from": "From",
+    "to": "To",
+    "date": "Date"
+  },
+  "placeholders": {
+    "fromCity": "Delhi",
+    "toCity": "Mumbai"
+  },
+  "actions": {
+    "searchBuses": "Search buses"
+  }
+}

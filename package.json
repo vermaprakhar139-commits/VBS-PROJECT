@@ -1,0 +1,21 @@
+{
+  "name": "virtual-bus-services",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "backend",
+    "frontend",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "pnpm -C backend dev & pnpm -C frontend dev",
+    "build": "pnpm -C backend build && pnpm -C frontend build",
+    "start": "pnpm -C backend start",
+    "lint": "pnpm -C backend lint && pnpm -C frontend lint",
+    "test": "pnpm -C backend test",
+    "seed": "pnpm -C backend seed"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.0"
+  }
+}
