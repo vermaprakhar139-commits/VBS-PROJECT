@@ -183,5 +183,15 @@ const routes: RouteObject[] = [
     ),
   },
 ];
+// add this as the last route in your `routes` array
+{
+  path: "*",
+  element: (
+    <Suspense fallback={<PageLoader />}>
+      <HomePage />
+    </Suspense>
+  ),
+}
+
 
 export default routes;
