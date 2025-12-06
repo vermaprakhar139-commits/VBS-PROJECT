@@ -15,7 +15,6 @@ useAuthStore.getState().initialize();
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      {/* IMPORTANT: basename tells react-router the app is served from /VBS-PROJECT/ on GitHub Pages */}
       <BrowserRouter basename="/VBS-PROJECT">
         <App />
       </BrowserRouter>
